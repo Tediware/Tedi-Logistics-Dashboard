@@ -1,0 +1,18 @@
+{
+  "heading": {
+    "transaction_set_header_ST": {
+      "transaction_set_identifier_code_01": "990",
+      "transaction_set_control_number_02": 1690
+    },
+    "beginning_segment_for_booking_or_pick_up_delivery_B1": {
+      "standard_carrier_alpha_code_01": "CRRX",
+      "shipment_identification_number_02": "K31400033",
+      "date_03": "20261102",
+      "reservation_action_code_04": "A"
+    },
+    "reference_identification_N9": {
+      "reference_identification_qualifier_01": "CN",
+      "reference_identification_02": "L51005"
+    }
+  }
+}

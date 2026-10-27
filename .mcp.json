@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "tediware": {
+      "command": "npx",
+      "args": [
+        "tedi",
+        "mcp",
+        "serve"
+      ]
+    }
+  }
+}

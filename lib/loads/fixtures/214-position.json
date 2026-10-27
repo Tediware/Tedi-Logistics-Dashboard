@@ -1,0 +1,35 @@
+{
+  "heading": {
+    "transaction_set_header_ST": {
+      "transaction_set_identifier_code_01": "214",
+      "transaction_set_control_number_02": 2805
+    },
+    "beginning_segment_for_transportation_carrier_shipment_status_message_B10": {
+      "reference_identification_01": "L51005",
+      "shipment_identification_number_02": "K31400033",
+      "standard_carrier_alpha_code_03": "CRRX"
+    },
+    "assigned_number_LX_loop": [
+      {
+        "assigned_number_LX": { "assigned_number_01": 1 },
+        "shipment_status_details_AT7_loop": [
+          {
+            "shipment_status_details_AT7": {
+              "shipment_status_code_01": "X6",
+              "shipment_status_or_appointment_reason_code_02": "NS",
+              "date_05": "20261105",
+              "time_06": "1630",
+              "time_code_07": "LT"
+            },
+            "equipment_shipment_or_real_property_location_MS1": {
+              "longitude_code_04": "0815528",
+              "latitude_code_05": "0412957",
+              "direction_identifier_code_06": "W",
+              "direction_identifier_code_07": "N"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

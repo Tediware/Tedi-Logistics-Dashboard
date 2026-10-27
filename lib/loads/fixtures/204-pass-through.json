@@ -1,0 +1,314 @@
+{
+  "heading": {
+    "transaction_set_header_ST": {
+      "transaction_set_identifier_code_01": "motor_carrier_load_tender_204",
+      "transaction_set_control_number_02": "414120001"
+    },
+    "beginning_segment_for_shipment_information_transaction_B2": {
+      "standard_carrier_alpha_code_02": "CRRX",
+      "shipment_identification_number_04": "K31400033",
+      "shipment_method_of_payment_06": "collect_CC"
+    },
+    "set_purpose_B2A": {
+      "transaction_set_purpose_code_01": "original_00",
+      "application_type_02": "load_tender_truckload_tl_carrier_only_LT"
+    },
+    "interline_information_MS3": {
+      "standard_carrier_alpha_code_01": "CRRX",
+      "routing_sequence_code_02": "origin_carrier_air_motor_or_ocean_O",
+      "transportation_method_type_code_04": "motor_van_VA"
+    },
+    "pallet_information_PLD": {
+      "quantity_of_pallets_shipped_01": 34
+    },
+    "name_N1_loop": [
+      {
+        "name_N1": {
+          "entity_identifier_code_01": "bill_to_party_BT",
+          "name_02": "NORTHWIND HOME GOODS c/o ACME FREIGHT",
+          "identification_code_qualifier_03": "code_assigned_by_the_organization_originating_the_transaction_set_93",
+          "identification_code_04": "BT0047712"
+        },
+        "geographic_location_N4": {
+          "city_name_01": "MEMPHIS",
+          "state_or_province_code_02": "TN",
+          "postal_code_03": "38101",
+          "country_code_04": "USA"
+        },
+        "address_information_N3": [
+          {
+            "address_information_01": "P.O. Box 4471",
+            "address_information_02": "Attn  Freight Payment"
+          }
+        ]
+      }
+    ]
+  },
+  "detail": {
+    "stop_off_details_S5_loop": [
+      {
+        "stop_off_details_S5": {
+          "stop_sequence_number_01": 1,
+          "stop_reason_code_02": "complete_CL"
+        },
+        "shipment_weight_packaging_and_quantity_data_AT8": {
+          "weight_qualifier_01": "gross_weight_G",
+          "weight_unit_code_02": "pounds_L",
+          "weight_03": 14878.65,
+          "lading_quantity_05": 3163
+        },
+        "business_instructions_and_reference_number_L11": [
+          {
+            "reference_identification_01": "K31400033",
+            "reference_identification_qualifier_02": "customer_reference_number_CR",
+            "description_03": "Load ID"
+          },
+          {
+            "reference_identification_01": "4500389858",
+            "reference_identification_qualifier_02": "purchase_order_number_PO",
+            "description_03": "PO Number"
+          },
+          {
+            "reference_identification_01": "615857183",
+            "reference_identification_qualifier_02": "bill_of_lading_number_BM",
+            "description_03": "BOL"
+          },
+          {
+            "reference_identification_01": "0071451488",
+            "reference_identification_qualifier_02": "delivery_order_number_DO",
+            "description_03": "Customer Reference Number"
+          },
+          {
+            "reference_identification_01": "CRRX",
+            "reference_identification_qualifier_02": "customer_reference_number_CR",
+            "description_03": "SCAC"
+          },
+          {
+            "reference_identification_01": "11/06/2026 08 00 AM",
+            "reference_identification_qualifier_02": "customer_reference_number_CR",
+            "description_03": "Delivery Appointment Date"
+          },
+          {
+            "reference_identification_01": "false",
+            "reference_identification_qualifier_02": "customer_reference_number_CR",
+            "description_03": "HazMat"
+          },
+          {
+            "reference_identification_01": "NO DOUBLE STACKING",
+            "reference_identification_qualifier_02": "customer_reference_number_CR",
+            "description_03": "Comment"
+          }
+        ],
+        "date_time_G62": [
+          {
+            "date_qualifier_01": "ship_not_before_date_37",
+            "date_02": "20261105",
+            "time_qualifier_03": "earliest_requested_pick_up_time_I",
+            "time_04": "0900"
+          },
+          {
+            "date_qualifier_01": "ship_not_later_than_date_38",
+            "date_02": "20261105",
+            "time_qualifier_03": "latest_requested_pick_up_time_K",
+            "time_04": "1600"
+          }
+        ],
+        "name_N1_loop": [
+          {
+            "name_N1": {
+              "entity_identifier_code_01": "shipper_SH",
+              "name_02": "EXAMPLE CONTRACT PACKAGING",
+              "identification_code_qualifier_03": "code_assigned_by_the_organization_originating_the_transaction_set_93",
+              "identification_code_04": "USNYS"
+            },
+            "geographic_location_N4": {
+              "city_name_01": "SCHENECTADY",
+              "state_or_province_code_02": "NY",
+              "postal_code_03": "12302",
+              "country_code_04": "USA"
+            },
+            "address_information_N3": [
+              {
+                "address_information_01": "100 INDUSTRIAL WAY",
+                "address_information_02": "DOOR 4"
+              }
+            ],
+            "contact_G61": [
+              {
+                "contact_function_code_01": "information_contact_IC",
+                "name_02": "SHIPPING DESK",
+                "communication_number_qualifier_03": "telephone_TE",
+                "communication_number_04": "518-555-0163"
+              },
+              {
+                "contact_function_code_01": "information_contact_IC",
+                "name_02": "SHIPPING DESK",
+                "communication_number_qualifier_03": "electronic_mail_EM",
+                "communication_number_04": "shipping@example.com"
+              }
+            ]
+          }
+        ],
+        "description_marks_and_numbers_L5_loop": [
+          {
+            "description_marks_and_numbers_L5": {
+              "lading_description_02": "STORAGE BIN 18QT 6",
+              "commodity_code_03": "58770-02",
+              "commodity_code_qualifier_04": "national_motor_freight_classification_nmfc_N",
+              "packaging_code_05": "CAS",
+              "marks_and_numbers_06": "LSP300000898713",
+              "marks_and_numbers_qualifier_07": "self_identifying_container_via_radio_frequency_id_device_SI",
+              "commodity_code_qualifier_08": "mutually_defined_Z",
+              "commodity_code_09": "85"
+            },
+            "shipment_weight_packaging_and_quantity_data_AT8": {
+              "weight_qualifier_01": "gross_weight_G",
+              "weight_unit_code_02": "pounds_L",
+              "weight_03": 7747.43,
+              "lading_quantity_05": 1647
+            }
+          },
+          {
+            "description_marks_and_numbers_L5": {
+              "lading_description_02": "STORAGE BIN 32QT 4",
+              "commodity_code_03": "58770-02",
+              "commodity_code_qualifier_04": "national_motor_freight_classification_nmfc_N",
+              "packaging_code_05": "CAS",
+              "marks_and_numbers_06": "LSP300000898713",
+              "marks_and_numbers_qualifier_07": "self_identifying_container_via_radio_frequency_id_device_SI",
+              "commodity_code_qualifier_08": "mutually_defined_Z",
+              "commodity_code_09": "125"
+            },
+            "shipment_weight_packaging_and_quantity_data_AT8": {
+              "weight_qualifier_01": "gross_weight_G",
+              "weight_unit_code_02": "pounds_L",
+              "weight_03": 7131.22,
+              "lading_quantity_05": 1516
+            }
+          }
+        ],
+        "order_identification_detail_OID_loop": [
+          {
+            "order_identification_detail_OID": {
+              "reference_identification_01": "LSP300000898713",
+              "purchase_order_number_02": "4500389858",
+              "unit_or_basis_for_measurement_code_04": "each_EA",
+              "quantity_05": 3163,
+              "weight_unit_code_06": "pounds_L",
+              "weight_07": 14879
+            }
+          }
+        ]
+      },
+      {
+        "stop_off_details_S5": {
+          "stop_sequence_number_01": 2,
+          "stop_reason_code_02": "complete_unload_CU"
+        },
+        "shipment_weight_packaging_and_quantity_data_AT8": {
+          "weight_qualifier_01": "gross_weight_G",
+          "weight_unit_code_02": "pounds_L",
+          "weight_03": 14878.65,
+          "lading_quantity_05": 3163
+        },
+        "business_instructions_and_reference_number_L11": [
+          {
+            "reference_identification_01": "K31400033",
+            "reference_identification_qualifier_02": "customer_reference_number_CR",
+            "description_03": "Load ID"
+          },
+          {
+            "reference_identification_01": "4500389858",
+            "reference_identification_qualifier_02": "purchase_order_number_PO",
+            "description_03": "PO Number"
+          },
+          {
+            "reference_identification_01": "615857183",
+            "reference_identification_qualifier_02": "bill_of_lading_number_BM",
+            "description_03": "BOL"
+          },
+          {
+            "reference_identification_01": "0071451488",
+            "reference_identification_qualifier_02": "delivery_order_number_DO",
+            "description_03": "Customer Reference Number"
+          }
+        ],
+        "date_time_G62": [
+          {
+            "date_qualifier_01": "deliver_not_before_date_53",
+            "date_02": "20261106",
+            "time_qualifier_03": "earliest_requested_deliver_time_G",
+            "time_04": "0800"
+          },
+          {
+            "date_qualifier_01": "deliver_no_later_than_date_54",
+            "date_02": "20261106",
+            "time_qualifier_03": "latest_requested_delivery_time_L",
+            "time_04": "0800"
+          }
+        ],
+        "name_N1_loop": [
+          {
+            "name_N1": {
+              "entity_identifier_code_01": "consignee_CN",
+              "name_02": "NORTHWIND HOME GOODS - HARVEY",
+              "identification_code_qualifier_03": "code_assigned_by_the_organization_originating_the_transaction_set_93",
+              "identification_code_04": "USILH"
+            },
+            "geographic_location_N4": {
+              "city_name_01": "HARVEY",
+              "state_or_province_code_02": "IL",
+              "postal_code_03": "60426",
+              "country_code_04": "USA"
+            },
+            "address_information_N3": [
+              {
+                "address_information_01": "200 DISTRIBUTION DR"
+              }
+            ],
+            "contact_G61": [
+              {
+                "contact_function_code_01": "information_contact_IC",
+                "name_02": "RECEIVING DESK",
+                "communication_number_qualifier_03": "telephone_TE",
+                "communication_number_04": "708-555-0118"
+              },
+              {
+                "contact_function_code_01": "information_contact_IC",
+                "name_02": "RECEIVING DESK",
+                "communication_number_qualifier_03": "electronic_mail_EM",
+                "communication_number_04": "receiving@example.com"
+              }
+            ]
+          }
+        ],
+        "order_identification_detail_OID_loop": [
+          {
+            "order_identification_detail_OID": {
+              "reference_identification_01": "LSP300000898713",
+              "purchase_order_number_02": "4500389858",
+              "unit_or_basis_for_measurement_code_04": "each_EA",
+              "quantity_05": 3163,
+              "weight_unit_code_06": "pounds_L",
+              "weight_07": 14879
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "total_weight_and_charges_L3": {
+      "weight_01": 14878.65,
+      "weight_qualifier_02": "gross_weight_G",
+      "freight_rate_03": 2416.63,
+      "rate_value_qualifier_04": "flat_rate_FR",
+      "charge_05": 2416.63,
+      "lading_quantity_11": 3163
+    },
+    "transaction_set_trailer_SE": {
+      "number_of_included_segments_01": 46,
+      "transaction_set_control_number_02": "414120001"
+    }
+  }
+}
