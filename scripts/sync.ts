@@ -37,6 +37,7 @@ if (values.rebuild) {
   )
   if (result.error) {
     console.error(`Stopped early: ${result.error}`)
+    console.error("Run it again to carry on from where it stopped.")
     process.exitCode = 1
   }
 }

@@ -157,12 +157,13 @@ export function x12Date(value: unknown): string | undefined {
 }
 
 /**
- * X12 HHMM[SS[DD]] to "HH:MM". Undefined for anything else, including
- * impossible times such as 2575.
+ * X12 HHMM, HHMMSS, HHMMSSD or HHMMSSDD (tenths and hundredths of a
+ * second) to "HH:MM". Undefined for anything else, including impossible
+ * times such as 2575.
  */
 export function x12Time(value: unknown): string | undefined {
   const text = str(value)
-  if (!text || !/^\d{4}(\d{2}){0,2}$/.test(text)) return undefined
+  if (!text || !/^\d{4}(\d{2}\d{0,2})?$/.test(text)) return undefined
   const hours = Number(text.slice(0, 2))
   const minutes = Number(text.slice(2, 4))
   if (hours > 23 || minutes > 59) return undefined

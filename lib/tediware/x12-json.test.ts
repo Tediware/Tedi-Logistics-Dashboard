@@ -14,6 +14,7 @@ import {
   str,
   withQualifier,
   x12Date,
+  x12Time,
   type X12Record,
 } from "./x12-json"
 
@@ -79,6 +80,15 @@ describe("value helpers", () => {
     assert.equal(x12Date("20260230"), undefined)
     assert.equal(x12Date("2026-07-02"), undefined)
     assert.equal(x12Date("20240229"), "2024-02-29")
+  })
+
+  it("reads every X12 time length and rejects impossible times", () => {
+    assert.equal(x12Time("1046"), "10:46")
+    assert.equal(x12Time("104630"), "10:46")
+    assert.equal(x12Time("1033000"), "10:33")
+    assert.equal(x12Time("10330012"), "10:33")
+    assert.equal(x12Time("10461"), undefined)
+    assert.equal(x12Time("2575"), undefined)
   })
 
   it("reads bare and labelled codes alike", () => {
